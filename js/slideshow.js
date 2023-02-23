@@ -1,11 +1,11 @@
-let slides = document.getElementsByClassName('slider__slide');
-let navlinks = document.getElementsByClassName('slider__navlink');
+let slides = document.getElementsByClassName("slider__slide");
+let navlinks = document.getElementsByClassName("slider__navlink");
 let currentSlide = 0;
 
-document.getElementById('nav-button--next').addEventListener('click', () => {
+document.getElementById("nav-button--next").addEventListener("click", () => {
   changeSlide(currentSlide + 1);
 });
-document.getElementById('nav-button--prev').addEventListener('click', () => {
+document.getElementById("nav-button--prev").addEventListener("click", () => {
   changeSlide(currentSlide - 1);
 });
 
@@ -17,16 +17,16 @@ function changeSlide(moveTo) {
     moveTo = slides.length - 1;
   }
 
-  slides[currentSlide].classList.toggle('active');
-  navlinks[currentSlide].classList.toggle('active');
-  slides[moveTo].classList.toggle('active');
-  navlinks[moveTo].classList.toggle('active');
+  slides[currentSlide].classList.toggle("active");
+  navlinks[currentSlide].classList.toggle("active");
+  slides[moveTo].classList.toggle("active");
+  navlinks[moveTo].classList.toggle("active");
 
   currentSlide = moveTo;
 }
 
-document.querySelectorAll('.slider__navlink').forEach((bullet, bulletIndex) => {
-  bullet.addEventListener('click', () => {
+document.querySelectorAll(".slider__navlink").forEach((bullet, bulletIndex) => {
+  bullet.addEventListener("click", () => {
     if (currentSlide !== bulletIndex) {
       changeSlide(bulletIndex);
     }
