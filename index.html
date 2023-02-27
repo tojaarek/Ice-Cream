@@ -18,117 +18,136 @@
 
 <body>
   <header class="header" id="top">
-    <div class="container">
-      <div class="header__wrapper">
-        <div class="header__container">
-          <picture class="header__logo">
-            <source srcset="./images/header/logo@1x.png 1x, ./images/header/logo@2x.png 2x" />
-            <img src="./images/header/logo@1x.png" alt="logo" width="199" height="50" />
-          </picture>
-        </div>
-        <nav class="header__nav">
-          <ul class="header__menu">
-            <li class="header__menu-item">
-              <a class="header__menu-link header__menu-link--active" href="index.html">home</a>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#advantages">about us</a>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#about">how it`s made</a>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#products">our products</a>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#contacts">contact</a>
-            </li>
-          </ul>
-        </nav>
-        <!-- mobile menu -->
-        <svg class="header__menu-svg js-open-menu" aria-expanded="false" aria-controls="mobile-menu" width="20"
-          height="12" role="img">
-          <use href="images/icons.svg#icon-burger"></use>
+    <div class="container container__header">
+      <a class="logo" href="https://tojaarek.github.io/Ice-Cream/">
+        <svg width="199" height="50">
+          <use href="./images/icons.svg#icon-logo"></use>
         </svg>
-        <!-- mobile menu -->
-        <button class="header__button" type="button">
-          Buy now
-          <svg class="header__icon" width="10" height="10">
-            <use href="./images/icons.svg#icon-greater-than"></use>
-          </svg>
-        </button>
-      </div>
+      </a>
+      <nav>
+        <ul class="nav">
+          <li class="nav__item">
+            <a class="nav__link" href="index.html">Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#advantages">About us</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#about">How it's made</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#products">Our products</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#contacts">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- mobile menu -->
+      <svg class="menu-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu" width="20" height="20"
+        role="img">
+        <use href="images/icons.svg#icon-burger"></use>
+      </svg>
+      <!-- mobile menu -->
+      <button class="header__button" type="button">
+        Buy now
+        <svg class="header__button-icon" width="10" height="10">
+          <use href="./images/icons.svg#icon-greater-than"></use>
+        </svg>
+      </button>
+
     </div>
   </header>
   <main>
     <section class="hero">
-      <div class="container">
-        <div class="hero__main-container">
-          <picture class="hero__img hero__img--ice">
-            <source media="(max-width: 768px)"
-              srcset="./images/header/big-ice_modal@1x.png, ./images/header/big-ice_modal@2x.png 2x" />
-            <source media="(max-width: 1200px)"
-              srcset="./images/header/big-ice_tablet@1x.png, ./images/header/big-ice_tablet@2x.png 2x" />
-            <source srcset="./images/header/big-ice_desktop@1x.png, ./images/header/big-ice_desktop@2x.png 2x" />
-            <img class="hero__image" src="./images/header/big-ice_modal@1x.png" alt="ice cream" />
-          </picture>
-          <picture class="hero__img hero__img--circle">
-            <source media="(max-width: 768px)"
-              srcset="./images/header/ellipse-tablet@1x.png, ./images/header/ellipse-tablet@2x.png 2x" />
-            <source srcset="./images/header/ellipse-desktop@1x.png, ./images/header/ellipse-desktop@2x.png 2x" />
-            <img class="hero__image hero__image--circle" src="./images/header/ellipse-tablet@1x.png" alt="ice cream" />
-          </picture>
-          <div class="hero__container">
-            <h1 class="hero__title">
-              ice cream made with <span class="hero__title--red">passion</span>
-            </h1>
-            <div class="hero__btn-wrapper">
-              <a class="hero__button-first" href="#products">products</a>
-              <a class="hero__button-secound" href="#about">how it's made</a>
-            </div>
-            <div class="hero__wrapper">
-              <picture class="hero__img-milk">
-                <source media="(max-width: 1200px)"
-                  srcset="./images/header/milk_tablet@1x.png, ./images/header/milk_tablet@2x.png 2x" />
-                <source srcset="./images/header/milk_desktop@1x.png, ./images/header/milk_desktop@2x.png 2x" />
-                <img class="hero__image" src="./images/header/milk.png" alt="jug of milk" />
-              </picture>
-              <div class="hero__wrapper-text">
-                <p class="hero__text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et
-                </p>
-                <button type="button" class="hero__btn"></button>
-              </div>
-            </div>
-            <div class="hero__wrapper-top">
-              <div class="hero__subcontainer">
-                <p class="hero__number">16</p>
-                <p class="hero__text">cafes</p>
-                <svg class="hero__icon" width="16" height="16">
-                  <use href="images/icons.svg#icon-ellipse-white"></use>
-                </svg>
-              </div>
-              <div class="hero__subcontainer">
-                <p class="hero__number">23</p>
-                <p class="hero__text">food trucks</p>
-                <svg class="hero__icon" width="16" height="16">
-                  <use href="images/icons.svg#icon-ellipse-white"></use>
-                </svg>
-              </div>
-            </div>
+      <div class="container container__hero">
+        <img class="hero__img hero__img--circle-mobile" src="./images/hero-circle-346.png" alt="ice cream" srcset="
+        images/hero-circle-346.png      346w,
+        images/hero-circle-346@2x.png   692w,
+        images/hero-circle-346@3x.png  1038w
+      " sizes="(min-width: 480px) 346px, (min-width: 320px) 346px, (min-width: 280px) 346px, 100vh" />
+        <img class="hero__img hero__img--circle-tablet" src="./images/hero-circle-335.png" alt="ice cream" srcset="
+        images/hero-circle-335.png      335w,
+        images/hero-circle-335@2x.png   670w,
+        images/hero-circle-335@3x.png  1005w
+      " sizes=" (min-width: 768px) 335px, 100vh" />
+        <img class="hero__img hero__img--circle-desktop" src="./images/hero-circle-534.png" alt="ice cream" srcset="
+        images/hero-circle-534.png      534w,
+        images/hero-circle-534@2x.png  1068w,
+        images/hero-circle-534@3x.png  1602w
+      " sizes=" (min-width: 1200px) 534px, 100vh" />
+        <img class="hero__img hero__img--ice-mobile" src="./images/big-ice-143.png" alt="ice cream" srcset="
+        images/big-ice-143.png      143w,
+        images/big-ice-143@2x.png   286w,
+        images/big-ice-143@3x.png   429w
+      " sizes="(min-width: 480px) 171px, (min-width: 320px) 171px, (min-width: 280px) 171px, 100vh" />
+        <img class="hero__img hero__img--ice-tablet" src="./images/big-ice-171.png" alt="ice cream" srcset="
+        images/big-ice-171.png      171w,
+        images/big-ice-171@2x.png   342w,
+        images/big-ice-171@3x.png   513w
+      " sizes=" (min-width: 768px) 143px, 100vh" />
+        <img class="hero__img hero__img--ice-desktop" src="./images/big-ice-236.png" alt="ice cream" srcset="
+        images/big-ice-236.png      236w,
+        images/big-ice-236@2x.png   472w,
+        images/big-ice-236@3x.png   708w
+      " sizes=" (min-width: 1200px) 236px, 100vh" />
+        <img class="hero__img hero__img--girl-tablet" src="./images/tasty-190.png" alt="ice cream" srcset="
+        images/tasty-190.png      190w,
+        images/tasty-190@2x.png   380w,
+        images/tasty-190@3x.png   570w
+      " sizes=" (min-width: 768px) 190px, 100vh" />
+        <img class="hero__img hero__img--girl-desktop" src="./images/tasty-304.png" alt="ice cream" srcset="
+        images/tasty-304.png      304w,
+        images/tasty-304@2x.png   608w,
+        images/tasty-304@3x.png   912
+      " sizes=" (min-width: 1200px) 304px, 100vh" />
+        <div class="headline">
+          <h1 class="headline__title">
+            ice cream </br> made with </br><span class="headline__red">passion</span>
+          </h1>
+          <div class="headline-buttons">
+            <button class="headline-buttons__products"><a class="headline-buttons__products-font"
+                href="#products">Products</a></button>
+            <button class="headline-buttons__about"><a class="headline-buttons__about-font" href="#about">How it's
+                made?</a></button>
           </div>
-          <picture class="hero__img hero__img--girl">
-            <source media="(max-width: 1200px)"
-              srcset="./images/header/girl_tablet@1x.png, ./images/header/girl_tablet@2x.png 2x" />
-            <source srcset="./images/header/girl_desktop@1x.png, ./images/header/girl_desktop@2x.png 2x" />
-            <img class="hero__image" src="./images/header/girl.png" alt="girl eating ice cream in a cone" />
-          </picture>
+        </div>
+        <div class="bio-container">
+          <img class="bio-container__img" src="./images/milk-152.png" alt="jug of milk" srcset="
+            images/milk-152.png    152w,
+            images/milk-152@2x.png 304w,
+            images/milk-152@3x.png 456w,
+            images/milk-213.png    213w,
+            images/milk-213@2x.png 426w,
+            images/milk-213@3x.png 639w" sizes="(min-width: 1200px) 213px, (min-width: 768px) 152px, 100vh" />
+          <div class="bio-container__description">
+            <p class="bio-container__description-text">
+              Lorem ipsum dolor sit amet,</br> consectetur adipiscing elit,</br> sed do eiusmod tempor</br>
+              incididunt ut labore et
+            </p>
+            <button type="button" class="bio-container__description-button"></button>
+          </div>
+        </div>
+        <div class="offer">
+          <div class="offer__item">
+            <p class="offer__number">16</p>
+            <p class="offer__text">cafes</p>
+            <svg class="offer__icon">
+              <use href="images/icons.svg#icon-ellipse-white"></use>
+            </svg>
+          </div>
+          <div class="offer__item">
+            <p class="offer__number">23</p>
+            <p class="offer__text">food trucks</p>
+            <svg class="offer__icon">
+              <use href="images/icons.svg#icon-ellipse-white"></use>
+            </svg>
+          </div>
         </div>
       </div>
     </section>
     <section class="products" id="products">
-      <div class="container">
+      <div class="container container__products">
         <div class="products__wrapper">
           <p class="products__subtitle">100% natural</p>
           <h2 class="products__title">products</h2>
@@ -550,11 +569,10 @@
       </li>
     </ul>
   </div>
-  <include src="./partials/mobile-nav.html"></include>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
     integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
     crossorigin="anonymous"></script>
-  <script defer src=".js/mobile-menu.js"></script>
+  <script defer src="./js/mobile-menu.js"></script>
   <!-- Carousel -->
   <script src="./js/slideshow.js"></script>
 </body>

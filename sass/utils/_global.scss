@@ -1,5 +1,5 @@
-@use 'variables';
-@use 'mixin';
+@use "variables";
+@use "mixin";
 html {
   scroll-behavior: smooth;
 }
@@ -25,12 +25,35 @@ body {
 .container {
   width: 100%;
   max-width: 320px;
-  margin: 0 auto;
-  padding: 0 20px;
-  @include mixin.tablet {
-    max-width: 768px;
+  &__header {
+    display: inline;
+    justify-content: flex-start;
   }
-  @include mixin.desktop {
-    max-width: 1280px;
+}
+@include mixin.tablet {
+  .container {
+    max-width: 768px;
+    &__header {
+      display: flex;
+    }
+    &__products {
+      margin: 0 auto;
+    }
+  }
+}
+
+@include mixin.desktop {
+  .container {
+    max-width: 1200px;
+    &__header {
+      align-items: center;
+    }
+    &__hero {
+      position: relative;
+      margin: 0 auto;
+    }
+    &__products {
+      margin: 0 auto;
+    }
   }
 }
