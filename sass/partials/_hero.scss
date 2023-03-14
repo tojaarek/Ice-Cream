@@ -20,6 +20,7 @@
 .hero {
   background-color: $background-color-header;
   padding: 0 16px 0 16px;
+  margin-bottom: 60px;
   position: relative;
   &__img {
     position: absolute;
@@ -74,8 +75,8 @@
     padding-bottom: 154px;
 
     &__products {
-      width: 62.4px;
-      height: 24px;
+      width: 70.62px;
+      height: 28px;
       border-radius: 20px;
       border: none;
       background-color: $active-color;
@@ -84,14 +85,14 @@
       justify-content: center;
       margin-right: 8px;
       &-font {
-        font-size: 8px;
-        line-height: 1.25;
+        font-size: 10px;
+        line-height: 1.3;
         color: $text-color-lighter;
       }
     }
     &__about {
-      width: 82.8px;
-      height: 24px;
+      width: 96.6px;
+      height: 28px;
       border-radius: 20px;
       border: none;
       background-color: $text-color-lighter;
@@ -99,8 +100,8 @@
       align-items: center;
       justify-content: center;
       &-font {
-        font-size: 8px;
-        line-height: 1.25;
+        font-size: 10px;
+        line-height: 1.3;
         color: $active-color;
       }
     }
@@ -109,6 +110,7 @@
 
 @include tablet {
   .hero {
+    padding: 0 32px 0 32px;
     &__img {
       &--circle-mobile {
         display: none;
@@ -116,7 +118,7 @@
       &--circle-tablet {
         display: block;
         top: 0;
-        left: 245px;
+        right: 180px;
       }
       &--circle-desktop {
         display: none;
@@ -127,7 +129,7 @@
       &--ice-tablet {
         display: block;
         bottom: 0;
-        left: 322px;
+        right: 303px;
       }
       &--ice-desktop {
         display: none;
@@ -135,7 +137,7 @@
       &--girl-tablet {
         display: block;
         bottom: 0;
-        right: 16px;
+        right: 32px;
       }
       &--girl-desktop {
         display: none;
@@ -188,7 +190,7 @@
       display: inline;
       z-index: 3;
       &-text {
-        font-size: 8px;
+        font-size: 9px;
         line-height: 1.5;
         display: block;
         color: $text-color-lighter;
@@ -220,7 +222,7 @@
     flex-direction: column;
     position: absolute;
     top: 16px;
-    right: 16px;
+    right: 32px;
     &__item {
       margin-bottom: 13px;
       position: relative;
@@ -241,8 +243,8 @@
     &__text {
       padding-right: 8px;
       text-align: end;
-      font-size: 8px;
-      line-height: 1.25;
+      font-size: 9px;
+      line-height: 1.3;
       color: $text-color-lighter;
     }
     &__icon {
@@ -258,7 +260,7 @@
   .bio-container {
     padding-bottom: 60px;
     &__description {
-      margin-top: 40px;
+      margin-top: 30px;
       display: block;
       &-text {
         color: $text-color-lighter;

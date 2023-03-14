@@ -1,6 +1,7 @@
 .footer {
   background-color: $background-color-darker;
   &__container {
+    margin: 0 auto;
     padding-bottom: 43px;
 
     @include tablet {

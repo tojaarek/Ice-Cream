@@ -29,6 +29,18 @@ body {
     display: inline;
     justify-content: flex-start;
   }
+  &__about {
+    margin: 0 auto;
+  }
+  &__advantages {
+    margin: 0 auto;
+  }
+  &__reviews {
+    margin: 0 auto;
+  }
+  &--locations {
+    margin: 0 auto;
+  }
 }
 @include mixin.tablet {
   .container {

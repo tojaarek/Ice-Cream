@@ -33,12 +33,12 @@
     }
     @include desktop {
       height: 138px;
-      width: 926px;
+      width: 940px;
     }
   }
 
   &__container::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 28px;
     left: 61px;
@@ -58,7 +58,7 @@
   &__textbox {
     width: 100%;
     height: auto;
-    font-family: 'DM Sans';
+    font-family: "DM Sans";
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -100,7 +100,10 @@
     min-width: 180px;
     max-width: 340px;
     margin: 71px 50px 20px 50px;
-    background: repeating-linear-gradient(rgba(225, 225, 225, 1) 0px 1px, transparent 1px 30px);
+    background: repeating-linear-gradient(
+      rgba(225, 225, 225, 1) 0px 1px,
+      transparent 1px 30px
+    );
 
     @include tablet {
       width: 524px;
@@ -155,7 +158,7 @@
     margin: 0px 5px;
   }
   &__name {
-    font-family: 'DM Sans';
+    font-family: "DM Sans";
     font-weight: 500;
     font-size: 14px;
     line-height: 1.86;
@@ -208,14 +211,14 @@
     }
   }
   &__nav {
-    margin: 609px auto 86px;
+    margin: 609px auto 40px;
     display: flex;
     justify-content: center;
     width: 90px;
     height: 12px;
 
     @include tablet {
-      margin: 491px auto 119px;
+      margin: 491px auto 40px;
     }
     @include desktop {
       margin: 461px auto 132px;

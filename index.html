@@ -148,117 +148,97 @@
     </section>
     <section class="products" id="products">
       <div class="container container__products">
-        <div class="products__wrapper">
-          <p class="products__subtitle">100% natural</p>
-          <h2 class="products__title">products</h2>
-        </div>
-        <ul class="products__items">
+        <p class="products__subtitle">100% natural</p>
+        <h2 class="products__title">products</h2>
+        <ul class="products__list">
           <li class="products__item products__item--ice-cream">
-            <div class="products__box products__box--ice-cream">
-              <h3 class="products__name products__name--ice-cream">ice cream</h3>
-              <p class="products__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et. dolore magna aliqua facilisis.
-              </p>
-              <div class="products__btn">
-                <button type="button" class="products__btn--image"></button>
-              </div>
-            </div>
+            <h3 class="products__name products__name--ice-cream">ice cream</h3>
+            <p class="products__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua facilisis.
+            </p>
+            <button type="button" class="products__button"></button>
           </li>
           <li class="products__item products__item--ice-coffee">
-            <div class="products__box products__box--ice-coffee">
-              <h3 class="products__name">ice coffee</h3>
-              <p class="products__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et. dolore magna aliqua facilisis.
-              </p>
-              <div class="products__btn">
-                <button type="button" class="products__btn--image"></button>
-              </div>
-            </div>
+            <h3 class="products__name products__name--ice-coffee">ice coffee</h3>
+            <p class="products__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua facilisis.
+            </p>
+            <button type="button" class="products__button"></button>
           </li>
           <li class="products__item products__item--milkshakes">
-            <div class="products__box products__box--milkshakes">
-              <h3 class="products__name">milkshakes</h3>
-              <p class="products__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et. dolore magna aliqua facilisis.
-              </p>
-              <div class="products__btn">
-                <button type="button" class="products__btn--image"></button>
-              </div>
-            </div>
+            <h3 class="products__name products__name--milkshakes">milkshakes</h3>
+            <p class="products__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua facilisis.
+            </p>
+            <button type="button" class="products__button"></button>
           </li>
         </ul>
       </div>
     </section>
     <section class="about">
-      <div class="container">
+      <div class="container container__about">
         <p class="about__subtitle">tradition and love</p>
         <h2 id="about" class="about__title">how it's made?</h2>
-        <div class="about__big-block">
-          <picture class="about__img">
-            <source srcset="
-                ./images/cow-milk-mobile.png    1x,
-                ./images/cow-milk-mobile@2x.png 2x,
-                ./images/cow-milk-mobile@3x.png 3x
-              " media="(max-width: 767px)" />
-            <source srcset="
-                ./images/cow-milk-tablet.png    1x,
-                ./images/cow-milk-tablet@2x.png 2x,
-                ./images/cow-milk-tablet@3x.png 3x
-              " media="(max-width: 1199px)" />
-            <source srcset="
-                ./images/cow-milk-desktop.png    1x,
-                ./images/cow-milk-desktop@2x.png 2x,
-                ./images/cow-milk-desktop@3x.png 3x
-              " media="(max-width: 1600px)" />
-            <img src="./images/cow-milk-desktop.png" alt="cow and a jug with milk" />
+        <div class="about__content">
+          <img class="about__img" src="./images/cow-280.png" alt="cow and a jug with milk" srcset="
+            images/cow-280.png     280w,
+            images/cow-280@2x.png  560w,
+            images/cow-280@3x.png  840w,
+            images/cow-336.png     336w,
+            images/cow-336@2x.png  672w,
+            images/cow-336@3x.png 1008w,
+            images/cow-501.png     501w,
+            images/cow-501@2x.png 1002w,
+            images/cow-501@3x.png 1503w"
+            sizes="(min-width: 1200px) 501px, (min-width: 768px) 336px, (min-width: 480) 280, 100vh" />
           </picture>
-          <div class="about__small-block">
-            <ul class="list">
-              <li class="list__item list__item--marked">
-                Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
-                lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
-              </li>
-              <li class="list__item list__item--bg">
-                Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus
-                orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat
-                urna maximus. Cras massa nibh, tincidunt.
-              </li>
-              <li class="list__item">Aliquam erat volutpat. Aenean accumsan.</li>
-            </ul>
-            <button type="button" class="button button__about">
-              read more
-              <svg class="button__icon" width="12" height="12">
-                <use href="./images/icons.svg#icon-greater-than"></use>
-              </svg>
-            </button>
-          </div>
+          <ul>
+            <li class="about__description about__description--main">
+              Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem
+              eget,egestas eros. Maecenas eleifend erat at justo fringilla.
+            </li>
+            <li class="about__description">
+              Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in
+              imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa
+              nibh,
+              tincidunt.
+            </li>
+            <li class="about__description">
+              Aliquam erat volutpat. Aenean accumsan.
+            </li>
+            <li class="about__description">
+              <button type="button" class="about__button">
+                Read more
+                <svg class="about__button-icon" width="12" height="12">
+                  <use href="./images/icons.svg#icon-greater-than"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
     <section class="advantages" id="advantages">
-      <div class="container">
-        <h2 class="advantages__secdescrp">Advantages</h2>
-        <ul class="advantages__itemholder">
+      <div class="container container__advantages">
+        <h2 class="advantages__headline">Advantages</h2>
+        <ul class="advantages__list">
           <li class="advantages__item">
-            <div class="advantages__icon1"></div>
-            <h3 class="advantages__title">721</h3>
+            <h3 class="advantages__title advantages__title--first">721</h3>
             <p class="advantages__description">
               Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
             </p>
           </li>
           <li class="advantages__item">
-            <div class="advantages__icon2"></div>
-            <h3 class="advantages__title advantages__title--textnom">16kg</h3>
+            <h3 class="advantages__title advantages__title--second">16kg</h3>
             <p class="advantages__description">
               Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
             </p>
           </li>
           <li class="advantages__item">
-            <div class="advantages__icon3"></div>
-            <h3 class="advantages__title advantages__title--textnom">84</h3>
+            <h3 class="advantages__title advantages__title--third">84</h3>
             <p class="advantages__description">
               Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
             </p>
@@ -285,7 +265,7 @@
       </div>
     </section>
     <section class="reviews">
-      <div class="container">
+      <div class="container container__reviews">
         <div class="slider">
           <div class="slider__slide active">
             <a class="customers-reviews__picturelink" href="https://www.facebook.com/" target="_blank">
@@ -374,88 +354,70 @@
         </div>
       </div>
     </section>
-    <section class="contacts-section" id="contacts">
-      <div class="contacts-container">
-        <h2 class="contacts-section-header">Contacts</h2>
-        <ul class="contacts">
-          <li class="shop">
-            <div class="shop-type--cafe">
-              <p class="shop-type__name">cafe</p>
-            </div>
-            <div class="city">
-              <p class="city__place">Chicago</p>
-              <p class="city__description">Fusce velit laoreet, tempus arcu molestie vulputate</p>
-            </div>
-            <div class="opening-hours-container">
-              <ul class="opening-hours">
-                <li class="opening-hours__days">Monday - Friday</li>
-                <li class="opening-hours__hours">06:00 am - 10:00 pm</li>
-              </ul>
-              <ul class="opening-hours">
-                <li class="opening-hours__days">Saturday - Sunday</li>
-                <li class="opening-hours__hours">08:00 am - 16:00 pm</li>
-              </ul>
-            </div>
-            <ul class="shop-contact">
-              <li class="shop-contact__item">
-                <a class="shop-contact__link" href="tel:+61(0)383766284">+61(0) 383 766 284</a>
+    <section class="locations" id="contact">
+      <div class="container container--locations">
+        <h2 class="locations__headline">Locations</h2>
+        <ul class="store">
+          <li class="store__item">
+            <ul class="details">
+              <li class="details__item details__item--cafe">
+                <p class="details__store-type">cafe</p>
               </li>
-              <li class="shop-contact__item">
-                <a class="shop-contact__link" href="mailto:noreply@envato.com">noreply@envato.com</a>
+              <li>
+                <p class="details__city">Chicago</p>
+                <p class="details__description">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+              </li>
+              <li class="details__item details__item--schedule">
+                <p class="details__days">Monday - Friday</p>
+                <p class="details__hours details__hours--margin">06:00 AM - 10:00 PM</p>
+                <p class="details__days">Saturday - Sunday</p>
+                <p class="details__hours">08:00 AM - 16:00 PM</p>
+              </li>
+              <li class="details__item details__item--contact">
+                <a class="details__contact" href="tel:+61(0)383766284">+61(0) 383 766 284</a>
+                <a class="details__contact" href="mailto:noreply@envato.com">noreply@envato.com</a>
               </li>
             </ul>
           </li>
-          <li class="shop">
-            <div class="shop-type--foodtruck">
-              <p class="shop-type__name">foodtruck</p>
-            </div>
-            <div class="city">
-              <p class="city__place">Los Angeles</p>
-              <p class="city__description">Fusce velit laoreet, tempus arcu molestie vulputate</p>
-            </div>
-            <div class="opening-hours-container">
-              <ul class="opening-hours">
-                <li class="opening-hours__days">Monday - Friday</li>
-                <li class="opening-hours__hours">06:00 am - 10:00 pm</li>
-              </ul>
-              <ul class="opening-hours">
-                <li class="opening-hours__days">Saturday - Sunday</li>
-                <li class="opening-hours__hours">08:00 am - 16:00 pm</li>
-              </ul>
-            </div>
-            <ul class="shop-contact">
-              <li class="shop-contact__item">
-                <a class="shop-contact__link" href="tel:+61(0)383766284">+61(0) 383 766 284</a>
+          <li class="store__item">
+            <ul class="details">
+              <li class="details__item details__item--truck">
+                <p class="details__store-type details__store-type--truck">food truck</p>
               </li>
-              <li class="shop-contact__item">
-                <a class="shop-contact__link" href="mailto:noreply@envato.com">noreply@envato.com</a>
+              <li>
+                <p class="details__city">Los Angeles</p>
+                <p class="details__description">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+              </li>
+              <li class="details__item details__item--schedule">
+                <p class="details__days">Monday - Friday</p>
+                <p class="details__hours details__hours--margin">06:00 AM - 10:00 PM</p>
+                <p class="details__days">Saturday - Sunday</p>
+                <p class="details__hours">08:00 AM - 16:00 PM</p>
+              </li>
+              <li class="details__item details__item--contact">
+                <a class="details__contact" href="tel:+61(0)383766284">+61(0) 383 766 284</a>
+                <a class="details__contact" href="mailto:noreply@envato.com">noreply@envato.com</a>
               </li>
             </ul>
           </li>
-          <li class="shop">
-            <div class="shop-type--cafe">
-              <p class="shop-type__name">cafe</p>
-            </div>
-            <div class="city">
-              <p class="city__place">New York</p>
-              <p class="city__description">Fusce velit laoreet, tempus arcu molestie vulputate</p>
-            </div>
-            <div class="opening-hours-container">
-              <ul class="opening-hours">
-                <li class="opening-hours__days">Monday - Friday</li>
-                <li class="opening-hours__hours">06:00 am - 10:00 pm</li>
-              </ul>
-              <ul class="opening-hours">
-                <li class="opening-hours__days">Saturday - Sunday</li>
-                <li class="opening-hours__hours">08:00 am - 16:00 pm</li>
-              </ul>
-            </div>
-            <ul class="shop-contact">
-              <li class="shop-contact__item">
-                <a class="shop-contact__link" href="tel:+61(0)383766284">+61(0) 383 766 284</a>
+          <li class="store__item">
+            <ul class="details">
+              <li class="details__item details__item--cafe">
+                <p class="details__store-type">cafe</p>
               </li>
-              <li class="shop-contact__item">
-                <a class="shop-contact__link" href="mailto:noreply@envato.com">noreply@envato.com</a>
+              <li>
+                <p class="details__city">New York</p>
+                <p class="details__description">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+              </li>
+              <li class="details__item details__item--schedule">
+                <p class="details__days">Monday - Friday</p>
+                <p class="details__hours details__hours--margin">06:00 AM - 10:00 PM</p>
+                <p class="details__days">Saturday - Sunday</p>
+                <p class="details__hours">08:00 AM - 16:00 PM</p>
+              </li>
+              <li class="details__item details__item--contact">
+                <a class="details__contact" href="tel:+61(0)383766284">+61(0) 383 766 284</a>
+                <a class="details__contact" href="mailto:noreply@envato.com">noreply@envato.com</a>
               </li>
             </ul>
           </li>
@@ -529,7 +491,7 @@
     </div>
     <div class="footer__copyright-box">
       <div class="footer__copyright-text-wrapper">
-        <p class="footer__copyright-text">© 2019 - IceCream. All Rights Reserved.</p>
+        <p class="footer__copyright-text">© 2023 - IceCream. All Rights Reserved.</p>
       </div>
     </div>
   </footer>
