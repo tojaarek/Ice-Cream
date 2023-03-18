@@ -1,3 +1,6 @@
+.reviews__headline {
+  display: none;
+}
 .customers-reviews {
   background-color: $text-color-lighter;
   display: flex;
@@ -11,7 +14,7 @@
     margin: 80px auto 29px;
 
     @include tablet {
-      margin: 121px auto 19px;
+      margin: 100px auto 19px;
     }
     @include desktop {
       margin: 123px auto 15px;
@@ -221,7 +224,7 @@
       margin: 491px auto 40px;
     }
     @include desktop {
-      margin: 461px auto 132px;
+      margin: 461px auto 60px;
     }
   }
   &__navlink {

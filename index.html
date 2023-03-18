@@ -99,17 +99,16 @@
         <img class="hero__img hero__img--girl-desktop" src="./images/tasty-304.png" alt="ice cream" srcset="
         images/tasty-304.png      304w,
         images/tasty-304@2x.png   608w,
-        images/tasty-304@3x.png   912
+        images/tasty-304@3x.png   912w
       " sizes=" (min-width: 1200px) 304px, 100vh" />
         <div class="headline">
           <h1 class="headline__title">
-            ice cream </br> made with </br><span class="headline__red">passion</span>
+            ice cream <br /> made with <br /><span class="headline__red">passion</span>
           </h1>
           <div class="headline-buttons">
-            <button class="headline-buttons__products"><a class="headline-buttons__products-font"
-                href="#products">Products</a></button>
-            <button class="headline-buttons__about"><a class="headline-buttons__about-font" href="#about">How it's
-                made?</a></button>
+            <a class="headline-buttons__products headline-buttons__products-font" href="#products">Products</a>
+            <a class="headline-buttons__about headline-buttons__about-font" href="#about">How it's
+              made?</a>
           </div>
         </div>
         <div class="bio-container">
@@ -122,7 +121,7 @@
             images/milk-213@3x.png 639w" sizes="(min-width: 1200px) 213px, (min-width: 768px) 152px, 100vh" />
           <div class="bio-container__description">
             <p class="bio-container__description-text">
-              Lorem ipsum dolor sit amet,</br> consectetur adipiscing elit,</br> sed do eiusmod tempor</br>
+              Lorem ipsum dolor sit amet,<br /> consectetur adipiscing elit,<br /> sed do eiusmod tempor<br />
               incididunt ut labore et
             </p>
             <button type="button" class="bio-container__description-button"></button>
@@ -193,8 +192,7 @@
             images/cow-501.png     501w,
             images/cow-501@2x.png 1002w,
             images/cow-501@3x.png 1503w"
-            sizes="(min-width: 1200px) 501px, (min-width: 768px) 336px, (min-width: 480) 280, 100vh" />
-          </picture>
+            sizes="(min-width: 1200px) 501px, (min-width: 768px) 336px, (min-width: 480px) 280px, 100vh" />
           <ul>
             <li class="about__description about__description--main">
               Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem
@@ -210,7 +208,7 @@
               Aliquam erat volutpat. Aenean accumsan.
             </li>
             <li class="about__description">
-              <button type="button" class="about__button">
+              <button type="button" class="about__button" data-modal-about-open>
                 Read more
                 <svg class="about__button-icon" width="12" height="12">
                   <use href="./images/icons.svg#icon-greater-than"></use>
@@ -265,11 +263,12 @@
       </div>
     </section>
     <section class="reviews">
+      <h2 class="reviews__headline">Customers Reviews</h2>
       <div class="container container__reviews">
         <div class="slider">
           <div class="slider__slide active">
             <a class="customers-reviews__picturelink" href="https://www.facebook.com/" target="_blank">
-              <img srcset="./images/emily@2x.png 2x, ./images/emily@3x.png 3x" , src="./images/emily.png" ,
+              <img srcset="./images/emily@2x.png 2x, ./images/emily@3x.png 3x" src="./images/emily.png"
                 alt="picture of Emily from Los Angeles" />
             </a>
             <div class="customers-reviews__container">
@@ -290,7 +289,7 @@
           </div>
           <div class="slider__slide">
             <a class="customers-reviews__picturelink" href="https://www.facebook.com/" target="_blank">
-              <img srcset="./images/margaret@2x.png 2x, ./images/margaret@3x.png 3x" , src="./images/margaret.png" ,
+              <img srcset="./images/margaret@2x.png 2x, ./images/margaret@3x.png 3x" src="./images/margaret.png"
                 alt="picture of Margaret from New York" />
             </a>
             <div class="customers-reviews__container">
@@ -312,7 +311,7 @@
           </div>
           <div class="slider__slide">
             <a class="customers-reviews__picturelink" href="https://www.facebook.com/" target="_blank">
-              <img srcset="./images/natalie@2x.png 2x, ./images/natalie@3x.png 3x" , src="./images/natalie.png" ,
+              <img srcset="./images/natalie@2x.png 2x, ./images/natalie@3x.png 3x" src="./images/natalie.png"
                 alt="picture of Natalie from Chicago" />
             </a>
             <div class="customers-reviews__container">
@@ -422,18 +421,20 @@
             </ul>
           </li>
         </ul>
-        <ul class="contacts-buttons">
-          <li class="contact-button">
-            <button class="contact-button__button--main" type="button">
-              Our Locations<svg class="contact-button__icon--main" width="12" height="12">
-                <use href="./images/icons.svg#contacts-section-arrow-1"></use>
+        <ul class="locations-buttons">
+          <li class="locations-buttons__item">
+            <button class="locations-buttons__button locations-buttons__button--locations" type="button"
+              data-modal-locations-open="">
+              Our Locations <svg class="locations-buttons__icon locations-buttons__icon--locations" width="10"
+                height="10">
+                <use href="./images/icons.svg#icon-greater-than"></use>
               </svg>
             </button>
           </li>
-          <li class="contact-button">
-            <button class="contact-button__button--secondary" type="button">
-              Franchise<svg class="contact-button__icon--secondary" width="12" height="12">
-                <use href="./images/icons.svg#contacts-section-arrow-2"></use>
+          <li class="locations-buttons__item">
+            <button class="locations-buttons__button locations-buttons__button--franchise" type="button">
+              Franchise <svg class="locations-buttons__icon" width="10" height="10">
+                <use href="./images/icons.svg#icon-greater-than"></use>
               </svg>
             </button>
           </li>
@@ -495,12 +496,49 @@
       </div>
     </div>
   </footer>
+  <!-- START OF SCROOL BUTTON -->
   <a class="scroll-button" href="#top">
     <svg class="scroll-button__icon" width="12" height="12">
       <use href="./images/icons.svg#icon-up-arrow"></use>
     </svg>
   </a>
-  <!-- Mobile menu -->
+  <!-- END OF SCROOL BUTTON -->
+  <!-- START OF MODAL LOCATIONS -->
+  <div class="all-modal-background is-hidden" data-modal-locations>
+    <div class="modal-locations">
+      <button class="modal-locations__button" data-modal-locations-close>
+        <svg width="20" height="20">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <h3 class="modal-about__locations">Our Locations</h3>
+      <iframe src="https://www.google.com/maps/d/embed?mid=12Ff8A78VHSRE3VGjIs7iz56Fcef11VY&ehbc=2E312F" width="448"
+        height="260"></iframe>
+    </div>
+  </div>
+  <!-- END OF MODAL LOCATIONS -->
+  <!-- START OF MODAL ABOUT -->
+  <div class="all-modal-background is-hidden" data-modal-about>
+    <div class="modal-about">
+      <button class="modal-about__button" data-modal-about-close>
+        <svg width="20" height="20">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <h3 class="modal-about__headline">How it's made?</h3>
+      <iframe width="448" height="205" src="https://www.youtube.com/embed/8WEMZ86Eho8" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+      <p class="modal-about__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et Lorem
+        ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+    </div>
+  </div>
+  <script src="./js/modal-about.js"></script>
+  <script src="./js/modal-locations.js"></script>
+  <!-- END OF MODAL ABOUT-->
+  <!-- START OF MOBILE MENU -->
   <div class="mobile-menu js-menu-container" id="mobile-menu">
     <button class="mobile-menu__button-close js-close-menu">
       <svg width="20" height="20">
@@ -535,6 +573,7 @@
     integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
     crossorigin="anonymous"></script>
   <script defer src="./js/mobile-menu.js"></script>
+  <!-- END OF SCROOL BUTTON -->
   <!-- Carousel -->
   <script src="./js/slideshow.js"></script>
 </body>

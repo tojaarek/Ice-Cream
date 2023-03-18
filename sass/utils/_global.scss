@@ -42,6 +42,29 @@ body {
     margin: 0 auto;
   }
 }
+.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.all-modal-background {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  z-index: 1;
+  transition-property: visibility;
+  visibility: visible;
+  display: flex;
+  animation-name: modalOpen;
+  animation-duration: 2000ms;
+  animation-timing-function: ease-in;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
 @include mixin.tablet {
   .container {
     max-width: 768px;
@@ -67,5 +90,19 @@ body {
     &__products {
       margin: 0 auto;
     }
+  }
+}
+
+/* ANIMATIONS */
+
+@keyframes modalOpen {
+  0% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  50% {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.4);
   }
 }
