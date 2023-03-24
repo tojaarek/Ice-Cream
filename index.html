@@ -182,7 +182,10 @@
         <p class="about__subtitle">tradition and love</p>
         <h2 id="about" class="about__title">how it's made?</h2>
         <div class="about__content">
-          <img class="about__img" src="./images/cow-280.png" alt="cow and a jug with milk" srcset="
+          <img class="about__img" src="./images/cow-240.png" alt="cow and a jug with milk" srcset="
+            images/cow-240.png     240w,
+            images/cow-240@2x.png  480w,
+            images/cow-240@3x.png  720w,
             images/cow-280.png     280w,
             images/cow-280@2x.png  560w,
             images/cow-280@3x.png  840w,
@@ -192,7 +195,7 @@
             images/cow-501.png     501w,
             images/cow-501@2x.png 1002w,
             images/cow-501@3x.png 1503w"
-            sizes="(min-width: 1200px) 501px, (min-width: 768px) 336px, (min-width: 480px) 280px, 100vh" />
+            sizes="(min-width: 1200px) 501px, (min-width: 768px) 336px, (min-width: 480px) 280px, (min-width: 281px) 240px, 100vh" />
           <ul>
             <li class="about__description about__description--main">
               Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem
@@ -353,7 +356,7 @@
         </div>
       </div>
     </section>
-    <section class="locations" id="contact">
+    <section class="locations" id="contacts">
       <div class="container container--locations">
         <h2 class="locations__headline">Locations</h2>
         <ul class="store">
@@ -425,7 +428,7 @@
           <li class="locations-buttons__item">
             <button class="locations-buttons__button locations-buttons__button--locations" type="button"
               data-modal-locations-open="">
-              Our Locations <svg class="locations-buttons__icon locations-buttons__icon--locations" width="10"
+              Our locations <svg class="locations-buttons__icon locations-buttons__icon--locations" width="10"
                 height="10">
                 <use href="./images/icons.svg#icon-greater-than"></use>
               </svg>
@@ -443,55 +446,48 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="container footer__container">
-      <div class="footer__slogan-wrapper">
-        <div class="footer__slogan-first-box">
-          <h2 class="footer__slogan-first-text">HOMEMADE ICE CREAM MADE</h2>
-        </div>
-        <div class="footer__slogan-second-box">
-          <h2 class="footer__slogan-second-text">WITH PASSION</h2>
-        </div>
-      </div>
-      <div class="footer__contact">
-        <ul class="footer__icon-wrapper">
-          <li class="footer__icon-item">
-            <a href="https://github.com/" class="footer__icon-link" target="_blank">
-              <div class="footer__icon-box">
-                <svg class="footer__icon" width="25px" height="25px">
-                  <use href="images/icons.svg#icon-github"></use>
-                </svg>
-              </div>
-            </a>
-          </li>
-          <li class="footer__icon-item">
-            <a href="https://web.telegram.org/" class="footer__icon-link" target="_blank">
-              <div class="footer__icon-box">
-                <svg class="footer__icon" width="25px" height="25px">
-                  <use href="images/icons.svg#icon-telegram"></use>
-                </svg>
-              </div>
-            </a>
-          </li>
-          <li class="footer__icon-item">
-            <a href="https://www.facebook.com/" class="footer__icon-link" target="_blank">
-              <div class="footer__icon-box">
-                <svg class="footer__icon" width="20px" height="25px">
-                  <use href="images/icons.svg#icon-facebook"></use>
-                </svg>
-              </div>
-            </a>
-          </li>
-        </ul>
-        <div class="footer__tel-contact">
-          <p class="footer__tel-text">
+    <div class="container container--footer">
+      <div class="footer__wrapper">
+        <h3 class="footer__headline">homemade ice cream made<br />
+          <span class="footer__headline--active-color">with passion</span>
+        </h3>
+        <div class="footer__wrapper-socialmedia">
+          <ul class="socialmedia">
+            <li class="socialmedia__item">
+              <a href="https://github.com/" target="_blank">
+                <div class="socialmedia__icon-box">
+                  <svg class="socialmedia__icon" width="25px" height="25px">
+                    <use href="images/icons.svg#icon-github"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="socialmedia__item">
+              <a href="https://web.telegram.org/" target="_blank">
+                <div class="socialmedia__icon-box">
+                  <svg class="socialmedia__icon" width="25px" height="25px">
+                    <use href="images/icons.svg#icon-telegram"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="socialmedia__item">
+              <a href="https://www.facebook.com/" target="_blank">
+                <div class="socialmedia__icon-box">
+                  <svg class="socialmedia__icon" width="20px" height="25px">
+                    <use href="images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <p class="footer__contact">
             Feel free to contact
-            <a href="tel:+610383766284" class="footer__tel"> +61 (0) 383 766 284</a>
+            <a href="tel:+610383766284" class="footer__tel">+61 (0) 383 766 284</a>
           </p>
         </div>
       </div>
-    </div>
-    <div class="footer__copyright-box">
-      <div class="footer__copyright-text-wrapper">
+      <div class="footer__copyright">
         <p class="footer__copyright-text">© 2023 - IceCream. All Rights Reserved.</p>
       </div>
     </div>
@@ -511,9 +507,16 @@
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
-      <h3 class="modal-about__locations">Our Locations</h3>
-      <iframe src="https://www.google.com/maps/d/embed?mid=12Ff8A78VHSRE3VGjIs7iz56Fcef11VY&ehbc=2E312F" width="448"
-        height="260"></iframe>
+      <h3 class="modal-locations__headline">Our Locations</h3>
+      <iframe class="modal-locations__map"
+        src="https://www.google.com/maps/d/embed?mid=1QLWcy42BgS3nZc3SIPT-oPgZwHfO9R0&ehbc=2E312F"></iframe>
+      <button class="modal-locations__button-map" type="button"><a class="modal-locations__link"
+          href="https://www.google.com/maps/d/embed?mid=1QLWcy42BgS3nZc3SIPT-oPgZwHfO9R0&ehbc=2E312F"
+          target="_blank">Open
+          map</a><svg class="locations-buttons__icon locations-buttons__icon--locations" width="10" height="10">
+          <use href="./images/icons.svg#icon-greater-than"></use>
+        </svg></button>
+
     </div>
   </div>
   <!-- END OF MODAL LOCATIONS -->
@@ -526,7 +529,7 @@
         </svg>
       </button>
       <h3 class="modal-about__headline">How it's made?</h3>
-      <iframe width="448" height="205" src="https://www.youtube.com/embed/8WEMZ86Eho8" title="YouTube video player"
+      <iframe class="modal-about__video" src="https://www.youtube.com/embed/8WEMZ86Eho8" title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>

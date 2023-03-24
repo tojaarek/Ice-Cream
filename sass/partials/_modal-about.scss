@@ -1,14 +1,13 @@
 .modal-about {
   top: 50%;
   left: 50%;
-  width: 568px;
-  height: 449px;
-  padding: 32px 60px 32px 60px;
+  width: 280px;
+  height: 459px;
+  padding: 12px 28px 28px 28px;
   background-color: $background-color-darker;
   box-shadow: 0px 8px 60px rgba(212, 20, 67, 0.1);
   border-radius: 10px;
   position: fixed;
-  z-index: 4;
   transition-property: visibility, transform;
   transform: translateX(-50%) translateY(-50%);
   transition-duration: 2;
@@ -18,6 +17,7 @@
   animation-timing-function: ease-in;
   animation-direction: normal;
   animation-fill-mode: forwards;
+  display: block;
   &__button {
     cursor: pointer;
     background: none;
@@ -36,18 +36,57 @@
   &__headline {
     text-align: center;
     font-family: $fontSecondary;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.4;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
+    margin-top: 16px;
     text-transform: uppercase;
     color: $active-color;
+    z-index: 4;
+  }
+  &__video {
+    width: 224px;
+    height: 199px;
   }
   &__description {
     font-family: $fontPrimary;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.4;
     color: $text-color-darker;
     margin-top: 20px;
+  }
+}
+@include tablet {
+  .modal-about {
+    padding: 12px 32px 32px 32px;
+    width: 568px;
+    height: 449px;
+    &__headline {
+      font-size: 20px;
+      margin-bottom: 32px;
+      margin-top: 20px;
+    }
+    &__video {
+      width: 504px;
+      height: 205px;
+    }
+  }
+}
+@include desktop {
+  .modal-about {
+    padding: 12px 60px 32px 60px;
+    width: 680px;
+    height: 559px;
+    &__headline {
+      font-size: 25px;
+    }
+    &__video {
+      width: 560px;
+      height: 315px;
+    }
+    &__description {
+      font-size: 16px;
+    }
   }
 }
 

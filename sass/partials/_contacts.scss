@@ -12,12 +12,15 @@
 }
 .store {
   padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   &__item {
     background: $background-color-lighter;
     box-shadow: 0px 8px 60px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
-    width: 280px;
-    margin: 0 20px 20px 20px;
+    max-width: fit-content;
+    margin-bottom: 20px;
     &:last-child {
       margin-bottom: 32px;
     }
@@ -158,6 +161,7 @@
     padding-top: 0;
     display: flex;
     justify-content: center;
+    flex-direction: row;
     padding-bottom: 60px;
     &__item {
       width: 224px;

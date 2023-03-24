@@ -41,6 +41,10 @@ body {
   &--locations {
     margin: 0 auto;
   }
+  &--footer {
+    max-width: fit-content;
+    margin: 0 auto;
+  }
 }
 .is-hidden {
   pointer-events: none;
@@ -55,7 +59,7 @@ body {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.3);
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   transition-property: visibility;
   visibility: visible;
   display: flex;
@@ -72,6 +76,10 @@ body {
       display: flex;
     }
     &__products {
+      margin: 0 auto;
+    }
+    &--footer {
+      max-width: none;
       margin: 0 auto;
     }
   }
