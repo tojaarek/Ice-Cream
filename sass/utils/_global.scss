@@ -50,6 +50,7 @@ body {
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
+  transform: scale(1.1);
 }
 
 .all-modal-background {
@@ -63,11 +64,8 @@ body {
   transition-property: visibility;
   visibility: visible;
   display: flex;
-  animation-name: modalOpen;
-  animation-duration: 2000ms;
-  animation-timing-function: ease-in;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) visibility 250ms
+    cubic-bezier(0.4, 0, 0.2, 1);
 }
 @include mixin.tablet {
   .container {

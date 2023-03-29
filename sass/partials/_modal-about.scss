@@ -12,11 +12,6 @@
   transform: translateX(-50%) translateY(-50%);
   transition-duration: 2;
   visibility: visible;
-  animation-name: modalFrame;
-  animation-duration: 1000ms;
-  animation-timing-function: ease-in;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
   display: block;
   &__button {
     cursor: pointer;
@@ -74,41 +69,17 @@
 }
 @include desktop {
   .modal-about {
-    padding: 12px 60px 32px 60px;
     width: 680px;
-    height: 559px;
+    height: 598px;
     &__headline {
       font-size: 25px;
     }
     &__video {
-      width: 560px;
-      height: 315px;
+      width: 616px;
+      height: 371px;
     }
     &__description {
       font-size: 16px;
     }
-  }
-}
-
-/* ANIMATION */
-
-@keyframes modalFrame {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 0.2;
-  }
-  40% {
-    opacity: 0.4;
-  }
-  60% {
-    opacity: 0.6;
-  }
-  80% {
-    opacity: 0.8;
-  }
-  100% {
-    opacity: 1;
   }
 }

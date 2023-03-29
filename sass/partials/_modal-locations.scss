@@ -12,11 +12,6 @@
   transform: translateX(-50%) translateY(-50%);
   transition-duration: 2;
   visibility: visible;
-  animation-name: modalFrame;
-  animation-duration: 1000ms;
-  animation-timing-function: ease-in;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
   text-align: center;
   &__button {
     cursor: pointer;
@@ -95,15 +90,14 @@
   }
   @include desktop {
     .modal-locations {
-      padding: 12px 60px 32px 60px;
       width: 680px;
-      height: 527px;
+      height: 557px;
       &__headline {
         font-size: 25px;
       }
       &__map {
-        width: 560px;
-        height: 315px;
+        width: 616px;
+        height: 345px;
         margin-bottom: 32px;
       }
       &__button-map {

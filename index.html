@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ice cream made with passion</title>
-  <link rel="icon" type="image/x-icon" href="./images/favicon_io/favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="./images/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
@@ -177,10 +177,10 @@
         </ul>
       </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
       <div class="container container__about">
         <p class="about__subtitle">tradition and love</p>
-        <h2 id="about" class="about__title">how it's made?</h2>
+        <h2 class="about__title">how it's made?</h2>
         <div class="about__content">
           <img class="about__img" src="./images/cow-240.png" alt="cow and a jug with milk" srcset="
             images/cow-240.png     240w,
@@ -427,7 +427,7 @@
         <ul class="locations-buttons">
           <li class="locations-buttons__item">
             <button class="locations-buttons__button locations-buttons__button--locations" type="button"
-              data-modal-locations-open="">
+              data-modal-locations-open>
               Our locations <svg class="locations-buttons__icon locations-buttons__icon--locations" width="10"
                 height="10">
                 <use href="./images/icons.svg#icon-greater-than"></use>
@@ -435,7 +435,8 @@
             </button>
           </li>
           <li class="locations-buttons__item">
-            <button class="locations-buttons__button locations-buttons__button--franchise" type="button">
+            <button class="locations-buttons__button locations-buttons__button--franchise" type="button"
+              data-modal-franchise-open>
               Franchise <svg class="locations-buttons__icon" width="10" height="10">
                 <use href="./images/icons.svg#icon-greater-than"></use>
               </svg>
@@ -499,6 +500,76 @@
     </svg>
   </a>
   <!-- END OF SCROOL BUTTON -->
+  <!-- START OF MODAL FRANCHISE -->
+  <div class="all-modal-background is-hidden" data-modal-franchise>
+    <div class="modal-franchise">
+      <button class="modal-franchise__button" data-modal-franchise-close>
+        <svg width="20" height="20">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <form class="form" name="franchiseForm" autocomplete="on">
+        <div class="form__group" role="group" aria-labelledby="franchise-head">
+          <h3 class="form__headline" id="franchise-head">
+            Thank you for your interest in owning an Ice Cream shop
+          </h3>
+          <p class="form__description">
+            Due to the overwhelming volume of franchise requests we are not accepting new franchise applications at
+            this time. Once the application process resumes, we will contact you for further information. Please
+            fill
+            out the contact form below and we will reach out for additional information.
+          </p>
+          <ul>
+            <li class="form__item">
+              <label for="franchise-name">
+                Name *
+                <input class="form__input form__input--padding" id="franchise-name" type="text" name="franchiseName"
+                  pattern="^[a-zA-Z]{3,}$" title="Your name must be at least 3 characters long." required />
+              </label>
+            </li>
+            <li class="form__item">
+              <label for="franchise-phone">
+                Phone *
+                <input class="form__input form__input--padding" id="franchise-phone" type="tel" name="franchisePhone"
+                  pattern="^[0-10]{10}$" title="Must be 10 digits." required />
+              </label>
+            </li>
+            <li class="form__item">
+              <label for="franchise-email">
+                E-mail *
+                <input class="form__input form__input--padding" id="franchise-email" type="email" name="franchiseEmail"
+                  required />
+              </label>
+            </li>
+            <li class="form__item">
+              <label for="franchise-message">
+                Comment
+                <textarea class="form__input form__input--resize" id="franchise-message"
+                  placeholder="Type the message here" name="franchiseMessage" rows="5"></textarea>
+              </label>
+              <p class="form__mandatory-fields">* - mandatory fields</p>
+            </li>
+            <li class="form__item form__item--terms">
+              <input class="form__checkbox" id="franchise-terms" type="checkbox" name="franchiseTerms" value="terms-yes"
+                required />
+              <label class="form__agreement" for="franchise-terms">
+                <svg class="form__checkbox-icon" width="11" height="8">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+                I accept the
+                <a href="#" class="form__link">Terms of Service</a> and
+                <a href="#" class="form__link">Privacy Policy</a>. *
+              </label>
+            </li>
+          </ul>
+        </div>
+        <button class="form__button form__button--submit" type="submit">
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+  <!-- END OF MODAL FRANCHISE -->
   <!-- START OF MODAL LOCATIONS -->
   <div class="all-modal-background is-hidden" data-modal-locations>
     <div class="modal-locations">
@@ -529,17 +600,13 @@
         </svg>
       </button>
       <h3 class="modal-about__headline">How it's made?</h3>
-      <iframe class="modal-about__video" src="https://www.youtube.com/embed/8WEMZ86Eho8" title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
-      <p class="modal-about__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      <video class="modal-about__video" src="./images/cows&cows&cows.mp4" controls data-modal-about-video></video>
+      <p class="modal-about__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor
         incididunt ut labore et Lorem
         ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
     </div>
   </div>
-  <script src="./js/modal-about.js"></script>
-  <script src="./js/modal-locations.js"></script>
   <!-- END OF MODAL ABOUT-->
   <!-- START OF MOBILE MENU -->
   <div class="mobile-menu js-menu-container" id="mobile-menu">
@@ -572,13 +639,16 @@
       </li>
     </ul>
   </div>
+  <!-- END OF SCROOL BUTTON -->
+  <!-- Scripts -->
+  <script src="./js/slideshow.js"></script>
+  <script src="./js/modal-franchise.js"></script>
+  <script src="./js/modal-about.js"></script>
+  <script src="./js/modal-locations.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
     integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
     crossorigin="anonymous"></script>
   <script defer src="./js/mobile-menu.js"></script>
-  <!-- END OF SCROOL BUTTON -->
-  <!-- Carousel -->
-  <script src="./js/slideshow.js"></script>
 </body>
 
 </html>
