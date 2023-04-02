@@ -1,8 +1,8 @@
 .modal-about {
   top: 50%;
   left: 50%;
-  width: 280px;
-  height: 439px;
+  width: 248px;
+  height: 392px;
   padding: 12px 28px 28px 28px;
   background-color: $background-color-darker;
   box-shadow: 0px 8px 60px rgba(212, 20, 67, 0.1);
@@ -34,27 +34,41 @@
     font-size: 16px;
     line-height: 1.4;
     margin-top: 16px;
+    margin-bottom: 32px;
     text-transform: uppercase;
     color: $active-color;
     z-index: 4;
   }
   &__video {
-    width: 224px;
-    height: 199px;
+    width: 192px;
+    height: 108px;
   }
   &__description {
     font-family: $fontPrimary;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.4;
     color: $text-color-darker;
-    margin-top: 20px;
+    margin-top: 15px;
+  }
+}
+@media screen and (min-width: 320px) {
+  .modal-about {
+    width: 320px;
+    height: 420px;
+    &__video {
+      width: 264px;
+      height: 149px;
+    }
+    &__description {
+      font-size: 14px;
+    }
   }
 }
 @include tablet {
   .modal-about {
     padding: 12px 32px 32px 32px;
     width: 568px;
-    height: 429px;
+    height: 510px;
     &__headline {
       font-size: 20px;
       margin-bottom: 32px;
@@ -62,23 +76,20 @@
     }
     &__video {
       width: 504px;
-      height: 205px;
+      height: 284px;
     }
   }
 }
 @include desktop {
   .modal-about {
     width: 680px;
-    height: 598px;
+    height: 560px;
     &__headline {
       font-size: 25px;
     }
     &__video {
       width: 616px;
-      height: 371px;
-    }
-    &__description {
-      font-size: 16px;
+      height: 347px;
     }
   }
 }
