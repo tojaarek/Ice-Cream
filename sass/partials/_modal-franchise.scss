@@ -54,7 +54,7 @@
   }
   &__description {
     font-family: $fontPrimary;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 1.4;
     color: $text-color-darker;
     margin-bottom: 24px;
@@ -68,6 +68,9 @@
     color: $text-color-darker;
     &:not(:first-child) {
       margin-top: 12px;
+    }
+    &--terms {
+      text-align: center;
     }
   }
   &__input {
@@ -123,7 +126,7 @@
   &__checkbox-icon {
     position: absolute;
     cursor: pointer;
-    top: 2px;
+    top: 3px;
     left: -2px;
     z-index: 1;
   }
@@ -148,22 +151,27 @@
 @media screen and (min-width: 320px) {
   .modal-franchise {
     width: 320px;
-    height: 726px;
+    height: 704px;
   }
   .form {
     &__description {
-      font-size: 14px;
+      font-size: 12px;
     }
     &__item {
       font-size: 12px;
+    }
+    &__agreement {
+      &::before {
+        top: 1px;
+      }
     }
   }
 }
 @include tablet {
   .modal-franchise {
     padding: 12px 32px 32px 32px;
-    width: 568px;
-    height: 702px;
+    width: 500px;
+    height: 648px;
   }
   .form {
     &__headline {
@@ -171,15 +179,15 @@
       margin-bottom: 22px;
     }
     &__description {
-      font-size: 15px;
+      font-size: 14px;
       margin-bottom: 24px;
     }
     &__item {
-      font-size: 14px;
-      max-width: 400px;
+      font-size: 12px;
+      max-width: 340px;
       margin: 0 auto;
       &:not(:first-child) {
-        margin-top: 16px;
+        margin-top: 12px;
       }
       &--padding {
         padding: 11px 16px;
@@ -189,18 +197,29 @@
         padding: 11px 16px;
         margin-bottom: 5px;
       }
+      &--terms {
+        text-align: start;
+      }
     }
   }
 }
 @include desktop {
   .modal-franchise {
-    width: 680px;
-    height: 696px;
+    width: 500px;
+    height: 662px;
   }
   .form {
+    &__headline {
+      font-size: 25px;
+    }
     &__item {
-      font-size: 15px;
-      max-width: 500px;
+      max-width: 350px;
+    }
+    &__agreement {
+      &::before {
+        width: 13px;
+        height: 13px;
+      }
     }
   }
 }
