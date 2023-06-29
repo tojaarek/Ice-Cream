@@ -2,6 +2,6 @@
 
 A website with a responsive layout. 
 
-https://tojaarek.github.io/Ice-Cream/
+Live preview: https://tojaarek.github.io/Ice-Cream/
 
 
