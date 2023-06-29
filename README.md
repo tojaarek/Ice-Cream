@@ -1,4 +1,4 @@
-# Ice-Cream  (HTML, SASS, JS, Parcel)
+# Ice-Cream  (HTML, SASS, JS)
 
 A website with a responsive layout. 
 
